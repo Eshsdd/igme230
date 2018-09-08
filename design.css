@@ -8,3 +8,13 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+
+header {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 60px;
+    border: 0px;
+    border-style: solid;
+    border-color: #2F4858;
+    background: #33658A;
+}

@@ -1,20 +1,30 @@
-body {
-    font-family: 'Muli', sans-serif;
-    font-size: 16px;
-    line-height: 1.4;
-    margin-top: 0;
+html{
+ background-color: darkseagreen;
 }
-#upper {
-    width: 90%;
-    margin: 0 auto;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+}
+header {
+    /* background-color: pink; */
 }
 
-header {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    height: 60px;
-    border: 0px;
-    border-style: solid;
-    border-color: #2F4858;
-    background: #33658A;
+#container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: #2D3142;
+    color: #EAE8FF;
+    overflow: auto;
+    border-radius: 20px;
+
+}
+
+img {
+    /* background-color: blue; */
+    float: left;
+    width: 15%;
+    height: 15%;
+    padding-left: 20px;
+    margin: 2%;
 }

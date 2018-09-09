@@ -18,16 +18,20 @@ body {
     background-color: #2D3142;
     overflow: auto;
     border-radius: 40px;
+    line-height: 1;
+    padding: 10px;
 
 }
 
 /* Add boarder and moves image to the left. Seperates it from the container itself */
 #face img {
     float: left;
-    width: 10%;
-    height: 10%;
+    width: 12%;
+    height: 12%;
+    min-height: 90px;
+    min-width: 90px;
     margin: 2%;
-    margin-left: 3%;
+    margin-left: 5%;
     border-radius: 20%;
     border: 2px solid #EAE8FF;
 }

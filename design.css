@@ -1,8 +1,8 @@
 /* Changes Colors and sets the margin for the enitre webpage*/
 html{
  background-color: darkseagreen;
- margin-left: 5%;
- margin-right: 5%;
+ margin-left: 10%;
+ margin-right: 10%;
  margin-top: 2%;
  color: #EAE8FF;
 }

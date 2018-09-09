@@ -1,3 +1,4 @@
+/* Changes Colors and sets the margin for the enitre webpage*/
 html{
  background-color: darkseagreen;
  margin-left: 5%;
@@ -5,11 +6,14 @@ html{
  margin-top: 2%;
  color: #EAE8FF;
 }
+
+/* Editing fonts */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
 }
 
+/* Contains face img and text, also puts them into a rounded box */
 #container {
     background-color: #2D3142;
     overflow: auto;
@@ -17,6 +21,7 @@ body {
 
 }
 
+/* Add boarder and moves image to the left. Seperates it from the container itself */
 #face img {
     float: left;
     width: 10%;
@@ -27,19 +32,22 @@ body {
     border: 2px solid #EAE8FF;
 }
 
+/* Contains the two lists in a rounded box and changes the line height for the unordered lists */
 #lists{
     margin-top: 3%;
     border-radius: 20px;
     background-color: #274029;
     overflow: auto;
     line-height: 2.3;
+    padding: 2%;
 }
 
+/* Floats the list's and keeps them apart from each other */
 #leftList {
     float: left;
     width: 50%;
 }
-
+ /* floats it next to the other list. */
 #rightList {
     float: left;
 }

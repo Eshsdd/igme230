@@ -55,3 +55,11 @@ body {
 #rightList {
     float: left;
 }
+
+/* Changing href colors */
+a {
+ color: #EAE8FF;
+}
+a:hover{
+ color: #419D78;
+}

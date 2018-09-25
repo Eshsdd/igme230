@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 
 header, article, aside{
     width: 100%;
@@ -29,10 +32,32 @@ aside{
 
 }
 
-
-
-
-
 img{
     max-width: 100%;
+}
+
+@media screen and (min-width: 620px) { 
+
+aside, nav{
+    float: left;
+    width: 20%;
+}
+
+article{
+    float: left;
+    width: 60%;
+    padding: 0 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 }

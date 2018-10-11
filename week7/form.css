@@ -38,18 +38,17 @@ form {
     background-color: #FCDEBE;
   }
   
-  input:focus, textarea:focus {
-    /* To give a little highlight on active elements */
-    border-color: #000;
-    outline-color: #0B132B;
-  }
-  
   textarea {
     /* To properly align multiline text fields with their labels */
     vertical-align: top;
   
     /* To give enough room to type some text */
     height: 5em;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give little dashes on active elements */
+    border: 1px dashed #000;
   }
   
   
@@ -70,8 +69,10 @@ form {
     box-shadow: 0 9px #999;
   }
 
+  /*if the mouse is hovering over the button, change the color*/
   button:hover {background-color: #3A445D}
 
+  /*if the mouse clicks the button, move down slightly and darken the shadow*/
   button:active {
     background-color: #3A445D;
     box-shadow: 0 5px #666;

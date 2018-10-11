@@ -1,0 +1,79 @@
+body {
+    background-color: #928779;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border-radius: 1em;
+    background-color: #D4D2A5;
+    color: #3A445D;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* To give the same size to all text fields */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #3A445D;
+    background-color: #FCDEBE;
+  }
+  
+  input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+    outline-color: #0B132B;
+  }
+  
+  textarea {
+    /* To properly align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* To give enough room to type some text */
+    height: 5em;
+  }
+  
+  
+  .button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: .5em;
+    color: #FCDEBE;
+    background-color: #4B556B;
+    border: 1px solid #3A445D;
+    padding: 7px;
+    border-radius: .5em;
+    box-shadow: 0 9px #999;
+  }
+
+  button:hover {background-color: #3A445D}
+
+  button:active {
+    background-color: #3A445D;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

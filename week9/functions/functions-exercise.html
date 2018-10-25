@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Week 9 Homework</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900,900i');
+       html { font-family: Lato; font-size: 16px; }
+       main { max-width: 800px; margin: 0 auto; border: 1px dotted black; padding: 0 10px;} h1 { font-weight: 900;}
+   </style>
+
+</head>
+
+<body>
+    <main>
+        <h1>My Favorites</h1>
+        <h2>My Favorite Colors</h2>
+    
+        <ol id="colorsList">
+    
+        </ol>
+    
+        <h2>My Favorite Foods</h2>
+    
+        <ol id="foodsList">
+    
+        </ol>
+    
+      </main>
+    
+    <script>
+        "use strict";
+        let colors = ["red", "blue", "green"]; // add some colors
+        let foods = ["pizza", "pancake", "poptart"]; // add some foods
+
+        function createList(listElement,array){
+
+            for(let i = 0;  i < array.length; i++) {
+            //creating new values to have only inside loop
+            let orderedList = document.querySelector(listElement);
+            let newListItem = document.createElement("li");
+
+             newListItem.innerHTML = array[i]; //changing the color values to html
+             orderedList.insertAdjacentElement("beforeBegin", newListItem); //adding it to the list.
+        }
+        }
+
+        createList("#colorsList", colors);
+        createList("#foodsList", foods);
+
+
+    </script>
+    
+</body>
+
+</html>

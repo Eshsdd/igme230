@@ -42,9 +42,21 @@
 
 <script>
 	let radioGroup = document.querySelectorAll("#radioGroup"); //it took me 2 hours just to write this .-. (I did it wrong in so many ways)
-	for(let value of radioGroup){
-		
+	for(let i = 0; i <= 2; i++){
+		if (radioGroup[i].value == "red"){
+			console.log("yes");
+		} else{
+			console.log("nope");
+		} //I dont know what Im doing 
+
 	}
+//or possibly 
+		for(let value of radioGroup){
+		console.log(value);
+		console.log(value.value); //well apparently this works
+		console.log(this.value);
+	}
+
 
 /* Write your code here! */
 </script>

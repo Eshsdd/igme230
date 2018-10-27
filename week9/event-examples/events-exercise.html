@@ -32,30 +32,41 @@
 <body>
 
 <div id="colorform">
-	<legend>Choose your favorite color!</legend>
-	<p><input type="radio" name="colorGroup" value="red" id="radioGroup"/> Red</p>
-	<p><input type="radio" name="colorGroup" value="green" id="radioGroup" /> Green</p>
-	<p><input type="radio" name="colorGroup" value="blue" id="radioGroup" /> Blue</p>
-	<p><button id="colorButton" type="button">Submit</button></p>
-	<p id="info"></p>
-</div>
+		<legend>Choose your favorite color!</legend>
+		<p><input type="radio" name="colorGroup" value="red" id="redRadio"/> Red</p>
+		<p><input type="radio" name="colorGroup" value="green" id="greenRadio"/> Green</p>
+		<p><input type="radio" name="colorGroup" value="blue" id="blueRadio"/> Blue</p>
+		<p><button id="colorButton" type="button">Submit</button></p>
+		<p id="info"></p>
+	</div>
+	
+	<script>
+		let response = document.querySelector("#info");
+		let legend = document.querySelector("legend");
+		let submit = document.querySelector("#colorButton");
+		let radioGroup = document.querySelectorAll("input[name='colorGroup']");
+		let color = "black";
+	
+		for (let button of radioGroup) {
+			   button.addEventListener("click", function() { 
+				   response.innerHTML = ("You chose the color " + this.value); 
+				   color = this.value;
+				   } );
+			 }
+	
+			 submit.addEventListener("click", function() { 
+				   response.innerHTML = ("Your FINAL CHOICE is " + color); 
+				   legend.style.color = color;
+				   document.getElementById("redRadio").disabled = true;
+				   document.getElementById("greenRadio").disabled = true;
+				   document.getElementById("blueRadio").disabled = true;
+				   } );
+	
 
-<script>
-	let radioGroup = document.querySelectorAll("#radioGroup"); //it took me 2 hours just to write this .-. (I did it wrong in so many ways)
-	for(let i = 0; i <= 2; i++){
-		if (radioGroup[i].value == "red"){
-			console.log("yes");
-		} else{
-			console.log("nope");
-		} //I dont know what Im doing 
 
-	}
-//or possibly 
-		for(let value of radioGroup){
-		console.log(value);
-		console.log(value.value); //well apparently this works
-		console.log(this.value);
-	}
+
+
+	
 
 
 /* Write your code here! */

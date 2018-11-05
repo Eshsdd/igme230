@@ -1,0 +1,483 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My personal code */
+/* My personal code */
+/* My personal code */
+/* My personal code */
+/**/
+
+
+::-webkit-scrollbar { 
+    display: none;
+ } 
+
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    /* The spacing between lines*/
+    line-height: 1.4;
+}
+
+/* grid Alignment Webpage*/
+#left-grids{ grid-area: leftmost; }
+#main-grids{ grid-area: main; }
+#header-bar { grid-area: header;}
+
+#grid-container {
+    grid-template-areas:
+    'header'
+    'leftmos'
+    'leftmost';
+  
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      justify-content: start;
+  }
+
+  
+#apps{ grid-area: apps; }
+#header-bar h1{ grid-area: h1;}
+
+#header-bar {
+    z-index: 1;
+    box-shadow: 0px 17px 8px rgba(0, 0, 0, .15);
+    height: 12vh;
+    width: 100vw;
+
+    
+    grid-template-areas:
+    'h1 apps';
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-bar h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 45px;
+    padding: .15em;
+}
+
+/* Set Icons in a good place */
+#apps {
+    margin-top: 20px; 
+    margin-right: 20px;
+    margin-right: 100px;
+    width: 180px;
+    display: flex;
+
+}
+
+/* Format all the Icons */
+#apps img, #Hamburger button {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+}
+
+/* Gives the button a little ring */
+#Hamburger button {
+    border-width:  2px;
+}
+
+/* When hovering the menu drops down */
+.Sand-Witch:hover .Pages {
+    display: block;
+}
+
+/* Doesn't move my menu icon, looks as if it comes from the header itself */
+.Pages {
+    position: absolute;
+    margin-top: 19px;
+    padding-top: 8px;
+    display: none;
+    width: 255px;
+    box-shadow: -17px 8px 8px rgba(0, 0, 0, .15);
+
+}
+
+/* Hides Url underline, adjusts text */
+.Pages a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+
+
+
+/* Start of Left Grid*/
+/*Left Grid Template*/
+#projects-bar { grid-area: project;}
+#color-bar { grid-area: colors;}
+
+#left-grids{
+    grid-template-areas:
+    'project colors';
+    
+    display: grid;
+    justify-content: flex-end;
+}
+
+/* Pre-bar inside of Left Grids*/
+#pre-bar {
+    width: auto;
+    overflow: hidden;
+}
+
+/* Projects-bar inside of Pre-Bar*/
+#projects-bar {
+    /* Width is slightly larger and thus hides the scroll Bar. */
+    
+    width: 100vw;
+    height: 100vh;
+    max-height: 88vh;
+
+}
+#Talking{
+    width: 500px;
+}
+
+#Talking h1 {
+    font-size: 30px;
+    border-bottom: 2px solid white;
+
+}
+
+#Talking p {
+    padding: 8px;
+}
+
+/* Project Template*/
+#pro1 { grid-area: pro1;}
+#pro2 { grid-area: pro2;}
+#pro3 { grid-area: pro3;}
+#pro4 { grid-area: pro4;}
+#blank { grid-area: blank;}
+
+/*Pro-folder inside Project-bar */
+#pro-folder {
+    grid-template-areas:
+    'pro1';
+
+    padding-top: 40px;
+    padding-left: 20px;
+
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    grid-gap: 50px;
+}
+
+/*Pro's inside Pro-folder */
+#pro1, #pro1 img {
+    width: 40vw;
+    height: 40vw;
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 20px;
+}
+
+/*Blank inside Pro-folder */
+#blank{
+    /*Blank so it adds one more grid gap */
+    height: 1px;
+}
+
+
+/* Color-bar inside of Left Grids*/
+#color-bar{
+    width: 135px;
+    padding-bottom: 25px;
+    display: grid;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+/* bar inside of color-bar*/
+#bar {
+    width: 80px;
+    height: 630px;
+    border-radius: 30px;
+
+    grid-area: 1 / span 1 / 1 / span 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bar a {
+    width: 48px;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+#Rose, 
+#Beach, 
+#Violet, 
+#Dark, 
+#Light,
+#Rit {
+    height: 48px;
+    width: 48px;
+    border-radius: 3px;
+}
+
+/* End of left Grid's*/
+
+
+@media screen and (max-width: 1510px) {
+    #resume-obj {
+        display: none;
+    }
+    #main-grids{
+        justify-content: center;
+    }
+
+ }
+
+ @media screen and (max-width: 1150px) {
+    #resume-obj {
+        display: initial;
+    }
+    #contact-obj{
+        display: none;
+    }
+
+ }
+
+ @media screen and (max-width: 900px) {
+    #grid-container {
+        grid-template-areas:
+        'header'
+        'leftmost'
+        'leftmost';
+    }
+     #main-grids{
+         display: none;
+     }
+     #left-grids{
+        justify-content: space-between;
+    }
+
+    #header-bar h1{
+        font-size: 35px;
+    }
+    #pre-bar {
+        /* Width is the size I want */
+        width: unset;
+        overflow: hidden;
+    }
+    
+    /* Projects-bar inside of Pre-Bar*/
+    #projects-bar {
+        /* Width is slightly larger and thus hides the scroll Bar. */
+        width: unset;
+        height: 100%;
+        max-height: 88vh;
+        overflow-y: auto;
+    
+    }
+    
+    /*Pro-folder inside Project-bar */
+    #pro-folder {
+    
+        height: 100vh;
+        padding-top: 40px;
+        padding-right: 20px;
+    
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #pro1,
+    #pro2,
+    #pro3,
+    #pro4 {
+        margin: 4%;
+}
+ }
+
+ @media screen and (max-width: 520px) {
+    #grid-container {
+        max-height: 100vh;
+    }
+     #apps{
+         display: none;
+     }
+     
+     #left-grids{
+        grid-template-areas:
+        'project'
+        'colors';
+        
+    }
+    #pro-folder {
+        height: 76vh;
+        padding: 0px;}
+
+    #color-bar{
+        height: 12vh;
+        width: 100vw;
+        padding: 0px;
+        align-content: center;
+    }
+    
+    #bar {
+        height: 65px;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+#bar a,
+#Rose, 
+#Beach, 
+#Violet, 
+#Dark, 
+#Light,
+#Rit {
+    height: 35px;
+    width: 35px;
+}
+ }

@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* My personal code */
+/* My personal code */
+/* My personal code */
+/* My personal code */
+/**/
+
+
+::-webkit-scrollbar { 
+    display: none;
+ } 
+
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 20px;
+    /* The spacing between lines*/
+    line-height: 1.4;
+}
+
+/* grid Alignment Webpage*/
+#left-grids{ grid-area: leftmost; }
+#main-grids{ grid-area: main; }
+#header-bar { grid-area: header;}
+
+#grid-container {
+    grid-template-areas:
+    'header'
+    ' main';
+  
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      justify-content: start;
+  }
+
+  
+#apps{ grid-area: apps; }
+#header-bar h1{ grid-area: h1;}
+
+#header-bar {
+    z-index: 1;
+    box-shadow: 0px 17px 8px rgba(0, 0, 0, .15);
+    height: 12vh;
+    width: 100vw;
+
+    
+    grid-template-areas:
+    'h1 apps';
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-bar h1 {
+    font-family: 'Bree Serif', serif;
+    font-size: 45px;
+    padding: .05em;
+}
+
+/* Set Icons in a good place */
+#apps {
+    margin-top: 20px; 
+    margin-right: 20px;
+    margin-right: 100px;
+    width: 180px;
+    display: flex;
+
+}
+
+/* Format all the Icons */
+#apps img, #Hamburger button {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+}
+
+/* Gives the button a little ring */
+#Hamburger button {
+    border-width:  2px;
+}
+
+/* When hovering the menu drops down */
+.Sand-Witch:hover .Pages {
+    display: block;
+}
+
+/* Doesn't move my menu icon, looks as if it comes from the header itself */
+.Pages {
+    position: absolute;
+    margin-top: 19px;
+    padding-top: 8px;
+    display: none;
+    width: 255px;
+    box-shadow: -17px 8px 8px rgba(0, 0, 0, .15);
+
+}
+
+/* Hides Url underline, adjusts text */
+.Pages a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: left;
+}
+
+
+/* Start of Main Grid*/
+/* Main Grid template*/
+
+#main-grids{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* contact-obj inside of main-grids*/
+#contact-obj {
+    font-size: 2em;
+    
+}
+
+/* contact inside of Contact-obj*/
+#contact {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+/* Contact Header, border used as a line break */
+#contact h1 {
+    font-size: 50px;
+    border-bottom: 4px solid white;
+}
+
+/* Formats the sizing of my about me page */
+#contact p {padding: .5em;
+font-size: 20px}
+
+/* Form Formatting */
+/* Form Inside of Contact */
+/* Lightly based off the My First Html form @ https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Your_first_HTML_form */
+form {
+    padding: 1em;
+  }
+  
+  /* Div have a half font size spacing */
+  form div + div {
+    margin-top: .5em;
+  }
+  
+  /* Make the Input areas uniform */
+  input, 
+  textarea {
+    width: 300px;
+    font: 1em sans-serif;
+    box-sizing: border-box;
+    border-width: 1px;
+  }
+
+  /* Setting Text up */
+  label {
+    display: inline-block;
+    width: 160px;
+    text-align: right;
+  }
+  
+/* Sizing up the larger box */
+  textarea {
+    vertical-align: top;
+    height: 3em;
+  }
+  
+  /* Submit this info */
+ #format button {
+    margin-left: 375px;
+    border-width: 0px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+  }
+
+
+
+ @media screen and (max-width: 1060px) {
+    #contact h1 {
+        font-size: 30px;}
+        #contact-obj {
+            font-size: 30px;
+        }
+        #contact {
+            height: 400px;}
+
+ }
+
+ @media screen and (max-width: 985px) {
+     
+    #contact h1 {
+        font-size: 30px;}
+        #contact-obj {
+            font-size: 20px;
+        }
+        #contact {
+            height: 400px;}
+            #format button {
+               margin-left: 39.5vw;}
+
+ }
+
+ @media screen and (max-width: 765px) {
+     
+    #contact {
+        width: 450px;
+        height: 400px;}
+
+        #format button {
+           margin-left: 300px;}
+
+    #apps{
+        display: none;
+    }
+ }
+ @media screen and (max-width: 500px) {
+    #contact {
+        width: 350px;}
+    input, 
+    textarea {
+      width: 200px;
+    }
+    #format button {
+       margin-left: 200px;}
+ }
+     

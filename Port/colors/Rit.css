@@ -1,0 +1,40 @@
+
+/* All The Colors */
+/* Colors that won't change */
+#Rose{background: #f26d7d;}
+#Beach{background: #0081af;} 
+#Violet{background: #b49fcc;}
+#Dark{background: #282b30;}
+#Light {background: #7e8d85;}
+#Rit{background: #ff7f11;}
+#bar a {background: #ede7d9;}
+#resume {background: #ffffff;}
+
+/* Colors that Can Change */
+#contact h1 {color: #ffffff;}
+#Talking h1 {color: #ffffff;}
+#header-bar h1 {color: #ede7d9;}
+input, 
+textarea {
+  background-color: #ede7d9;
+  border-color: #4b4237;}
+#projects-bar{background-color: #4b4237;}
+button{background-color: #4b4237;}
+form {color: #4b4237;}
+#contact p {color: #4b4237;}
+.Pages a {
+    color: #4b4237;}
+#pro1,
+#pro2,
+#pro3,
+#pro4 {background-color: #a49694;}
+#Talking p {color: #a49694;}
+.Pages a:hover {background-color: #a49694;}
+#header-bar {background-color: #736b60;}
+.Pages {background-color: #736b60;}
+#contact {background-color: #ff7f11;}
+button {color: #ff7f11;}
+#Hamburger button {border-color: #ff7f11;}
+#color-bar{background-color: #ff7f11;}
+html{background: #ff9933;}
+#bar {background: #ff9933;}

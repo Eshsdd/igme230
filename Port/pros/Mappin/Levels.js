@@ -1,6 +1,7 @@
 class Levels {
 	constructor(){
     }
+    /*
     level1(){ 
         //corner wall.
         tiles[1][0].imgNum = 1;
@@ -95,7 +96,7 @@ class Levels {
         tiles[9][8].imgNum = 14;
         tiles[10][8].imgNum = 8;
         tiles[11][8].imgNum = 2;
-    }
+    } */
     level2(){
         //Plans level design by rows
         tiles[0][3].imgNum = 11;

@@ -359,7 +359,7 @@ form {
         display: none;
     }
  }
- @media screen and (max-width: 500px) {
+ @media screen and (max-width: 550px) {
     #contact {
         width: 350px;}
     input, 

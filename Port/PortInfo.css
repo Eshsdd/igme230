@@ -264,6 +264,7 @@ body {
     box-sizing: border-box;
     padding: 1em;
     border-radius: 10px;
+    width: 70vw;
 }
 
 /* Contact Header, border used as a line break */
@@ -327,8 +328,6 @@ form {
         #contact-obj {
             font-size: 30px;
         }
-        #contact {
-            height: 400px;}
 
  }
 
@@ -339,8 +338,6 @@ form {
         #contact-obj {
             font-size: 20px;
         }
-        #contact {
-            height: 400px;}
             #format button {
                margin-left: 39.5vw;}
 
@@ -349,8 +346,7 @@ form {
  @media screen and (max-width: 765px) {
      
     #contact {
-        width: 450px;
-        height: 400px;}
+        width: 450px;}
 
         #format button {
            margin-left: 300px;}
@@ -361,7 +357,7 @@ form {
  }
  @media screen and (max-width: 550px) {
     #contact {
-        width: 350px;}
+        width: 450px;}
     input, 
     textarea {
       width: 200px;

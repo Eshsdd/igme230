@@ -7,7 +7,7 @@ let img;
 
 function preload() {
 
-    img = loadImage("/images/Green-skull.png");
+    img = loadImage("/images/Green-Skull.png");
 }
 
 function setup() {

@@ -90,15 +90,15 @@ function preload() {
 	/*3*/
 	kiddo.push(loadImage("images/StoneBack.png"));
 	/*0*/
-	grey.push(loadImage("/Mappin/images/grey0.png"));
+	grey.push(loadImage("/Mappin/images/Grey0.png"));
 	/*1*/
-	grey.push(loadImage("/Mappin/images/grey1.png"));
+	grey.push(loadImage("/Mappin/images/Grey1.png"));
 	/*2*/
-	grey.push(loadImage("/Mappin/images/grey2.png"));
+	grey.push(loadImage("/Mappin/images/Grey2.png"));
 	/*3*/
-	grey.push(loadImage("/Mappin/images/grey3.png"));
+	grey.push(loadImage("/Mappin/images/Grey3.png"));
 	/*4*/
-	grey.push(loadImage("/Mappin/images/grey4.png"));
+	grey.push(loadImage("/Mappin/images/Grey4.png"));
 	/*5*/
 	grey.push(loadImage("images/Delta Jumpluff GreyScale.png"));
 

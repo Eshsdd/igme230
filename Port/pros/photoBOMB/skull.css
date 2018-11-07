@@ -414,7 +414,7 @@ body {
     /*Pro-folder inside Project-bar */
     #pro-folder {
     
-        height: 100vh;
+        height: 105vh;
         padding-top: 40px;
         padding-right: 20px;
     
@@ -450,7 +450,7 @@ body {
         
     }
     #pro-folder {
-        height: 76vh;
+        height: 120vh;
         padding: 0px;}
 
     #color-bar{

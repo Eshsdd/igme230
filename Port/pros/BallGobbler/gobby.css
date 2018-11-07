@@ -378,7 +378,7 @@ body {
 
  }
 
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 1200px) {
     #grid-container {
         grid-template-areas:
         'header'
@@ -405,9 +405,9 @@ body {
     #projects-bar {
         /* Width is slightly larger and thus hides the scroll Bar. */
         width: unset;
-        height: 100%;
+        height: unset;
         max-height: 88vh;
-    
+        overflow-y: scroll;
     }
     
     /*Pro-folder inside Project-bar */

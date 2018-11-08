@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <title>JQ-dawg</title>
+
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+            background-color: darkkhaki;
+
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #box{
+            width: 250px;
+        }
+        #navPannel {
+            background-color: khaki;
+            padding: 5px;
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        body button {
+            margin-left: 40px;
+            width: 50px;
+            padding: 3px;
+            border: 0;
+            border-radius: 2px;
+            background-color: olive;
+            color:ghostwhite;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+
+    <div id="navPannel">
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+
+    </div>
+</div>
+
+    <script>
+    $("#hide").click(function(){   $("#navPannel").hide(500); $("li").hide(300);   })
+    $("#show").click(function(){   $("#navPannel").show();  $("li").show();   })
+    
+    </script>
+
+</body>
+</html>

@@ -186,6 +186,7 @@ body {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #header-bar h1 {
@@ -196,12 +197,7 @@ body {
 
 /* Set Icons in a good place */
 #apps {
-    margin-top: 20px; 
-    margin-right: 20px;
-    margin-right: 100px;
-    width: 180px;
     display: flex;
-
 }
 
 /* Format all the Icons */
@@ -225,11 +221,9 @@ body {
 /* Doesn't move my menu icon, looks as if it comes from the header itself */
 .Pages {
     position: absolute;
-    margin-top: 19px;
-    padding-top: 8px;
+    padding-top: 35px;
     display: none;
-    width: 255px;
-    box-shadow: -17px 8px 8px rgba(0, 0, 0, .15);
+    width: 400px;
 
 }
 
@@ -384,7 +378,7 @@ body {
 
  }
 
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 1200px) {
     #grid-container {
         grid-template-areas:
         'header'
@@ -411,15 +405,15 @@ body {
     #projects-bar {
         /* Width is slightly larger and thus hides the scroll Bar. */
         width: unset;
-        height: 100%;
+        height: unset;
         max-height: 88vh;
-    
+        overflow-y: scroll;
     }
     
     /*Pro-folder inside Project-bar */
     #pro-folder {
     
-        height: 100vh;
+        height: 105vh;
         padding-top: 40px;
         padding-right: 20px;
     
@@ -440,9 +434,13 @@ body {
     #grid-container {
         max-height: 100vh;
     }
-     #apps{
-         display: none;
-     }
+    #apps img{
+        display: none;
+    }
+
+    #apps {
+        padding-right: 28px ;
+    }
      
      #left-grids{
         grid-template-areas:
@@ -451,7 +449,7 @@ body {
         
     }
     #pro-folder {
-        height: 76vh;
+        height: 120vh;
         padding: 0px;}
 
     #color-bar{

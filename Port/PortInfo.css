@@ -9,7 +9,7 @@ div,
 span,
 applet,
 object,
-iframe,
+iframe, 
 h1,
 h2,
 h3,
@@ -185,22 +185,18 @@ body {
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 #header-bar h1 {
     font-family: 'Bree Serif', serif;
     font-size: 45px;
-    padding: .05em;
+    padding: .15em;
 }
 
 /* Set Icons in a good place */
 #apps {
-    margin-top: 20px; 
-    margin-right: 20px;
-    margin-right: 100px;
-    width: 180px;
     display: flex;
-
 }
 
 /* Format all the Icons */
@@ -224,14 +220,11 @@ body {
 /* Doesn't move my menu icon, looks as if it comes from the header itself */
 .Pages {
     position: absolute;
-    margin-top: 19px;
-    padding-top: 8px;
+    padding-top: 35px;
     display: none;
-    width: 255px;
-    box-shadow: -17px 8px 8px rgba(0, 0, 0, .15);
+    width: 400px;
 
 }
-
 /* Hides Url underline, adjusts text */
 .Pages a {
     text-decoration: none;
@@ -265,6 +258,8 @@ body {
     padding: 1em;
     border-radius: 10px;
     width: 70vw;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Contact Header, border used as a line break */
@@ -351,9 +346,13 @@ form {
         #format button {
            margin-left: 300px;}
 
-    #apps{
-        display: none;
-    }
+           #apps img{
+            display: none;
+        }
+   
+        #apps {
+            padding-right: 28px ;
+        }
  }
  @media screen and (max-width: 550px) {
     #contact {

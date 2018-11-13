@@ -134,11 +134,15 @@
         console.log(color);  });
 
         $(".cell").mousedown(function () { 
-        $(this).css("background-color", color);
-        $(".cell").mouseover(function () {
-        $(this).css("background-color", color);
-    }); 
-        });
+            $(this).css("background-color", color);
+            $(".cell").mouseover(function () {
+                $(this).css("background-color", color);
+                }); 
+            });
+
+            $(document).mouseup(function () {
+            $(".cell").unbind("mouseover");
+            });
 
 
     </script>

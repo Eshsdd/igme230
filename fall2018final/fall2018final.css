@@ -116,6 +116,10 @@ nav {
     background-color: #ddd;
 }
 
+#count{
+    font: 50px bold;
+}
+
 @media screen and (max-width: 568px) {
     #yourgrid {
         width: 100vw;

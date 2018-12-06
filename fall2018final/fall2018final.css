@@ -35,20 +35,101 @@ aside {
 Your Formatting
 ***************/
 
+/* Setting grid basics */
+header {
+    grid-area: header;
+    background-color: lightpink;
+}
+
+nav {
+    grid-area: nav;
+    background-color: lavenderblush;
+}
+
+article {
+    grid-area: article;
+    background-color: lightcyan;
+}
+
+aside {
+    grid-area: aside;
+    background-color: lightblue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightpink;
+}
+
+/* Desktop Grid Layout */
+#yourgrid {
+    width: 90vw;
+    max-width: 1000px;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'article nav'
+        'article aside'
+        'footer footer';
+
+    grid-template-columns: auto auto;
+    grid-template-rows: 75px 30px 1fr 50px;
+}
+
+/* Css Formating */
+header,
+footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    z-index: 2; /* JS/JQ Navbar */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.mainmenu {
+    margin: 0;
+    background-color: #ccc;
+    width: 6rem;
+}
+
+.submenu {
+    position: absolute; /* JS/JQ Navbar */
+    width: 6rem;
+
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background: #ccc;
+    display: none;
+}
+
+.submenu li {
+    padding-left: .25rem;
+    background-color: #ddd;
+}
+
 @media screen and (max-width: 568px) {
-    #yourgrid{
+    #yourgrid {
         width: 100vw;
 
-    grid-template-areas:
-    'header'
-    'nav'
-    'article'
-    'aside'
-    'footer';
+        grid-template-areas:
+            'header'
+            'nav'
+            'article'
+            'aside'
+            'footer';
 
-    grid-template-columns: auto;
-    grid-template-rows: 75px 30px auto auto 30px;
+        grid-template-columns: auto;
+        grid-template-rows: 75px 30px auto auto 30px;
     }
 
-    
+
 }

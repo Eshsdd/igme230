@@ -5,9 +5,7 @@ $(".mainmenu").click(function () {
 });
 
 
-// Ajax Content
-
-
+// Ajax Content (Not Finished)
 let Content = ("article0.txt")
 $(":radio").val(Content);
 $("article").load(Content);

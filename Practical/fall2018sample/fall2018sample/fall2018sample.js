@@ -7,12 +7,12 @@ $(".menuitem").click(function () {
 
 // Ajax Content
 
+let Content = ("content1.txt");
 
-let Content = ("content1.txt")
-$("#choose-content").val(Content);
-$("#content").load(Content);
-
-$("#choose-content").change(function () {
-    Content = $(this).val();
-    $("#content").load(Content);
-});
+  $("#choose-content").val(Content);
+  $("#content").load(Content);
+  
+  $("#choose-content").change(function () {
+      Content = $(this).val();
+      $("#content").load(Content);
+  });

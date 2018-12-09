@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="levels.css">
+    <title>Easy Mode</title>
+</head>
+
+<body>
+    <div id="mobile"><h1 class="animated infinite rubberBand">Sorry! This site only works on desktop!</h1></div>
+    <div id="wrapper">
+
+        <aside>
+            <div id="back">
+                <!-- Got Rid of timer for back button -->
+                <a href="/interactive/Boom.html"><img src="/interactive/assets/Bombs/return.png" alt="Back Button"></a>
+            </div>
+
+            <div id="matchStick">
+                <img id="match" src="/interactive/assets/Matches/Match.png" alt="The Match.">
+                <img id="flame" src="/interactive/assets/Matches/Flame.png" alt="The Flame." class="animated infinite flash">
+            </div>
+
+            <img id="claw" src="/interactive/assets/Matches/Claw.png" alt="The Claw.">
+
+
+        </aside>
+        <main>
+            <div id="bombSquad">
+                <button id="bigRed"></button>
+                <img id="theBomb" src="/interactive/assets/Bombs/smallBomb.png" alt="A rounded Bomb.">
+                <div id="fuseSpot"><img id="fuse" src="/interactive/assets/Bombs/fuse.png" alt="A small lit fuse"
+                        class="animated infinite tada">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="levels.js"></script>
+    <script>
+
+
+        // webpage specific code.
+
+        let lit = false;
+
+        $("#match").mousedown(function () {
+            $('#claw').addClass('animated fadeOutDown');
+        });
+
+        $("#bigRed").click(function () {
+            if (lit == true) {
+            }
+        })
+
+    </script>
+</body>
+
+</html>

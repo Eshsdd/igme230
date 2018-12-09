@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"
+    ><link rel="stylesheet" href="levels/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="Boom.css">
     <title>Here Comes the Boom</title>
 </head>
@@ -12,15 +14,15 @@
 
         
     <div id="centered">
-            <img src="assets/3x/Asset 1@3x.png" alt="Here Comes the BOOM!">
+            <img src="assets/3x/Asset 1@3x.png" alt="Here Comes the BOOM!" class="animated infinite pulse delay-2s">
     </div>
 
     <div id="info">
         <h2>Select Difficulty</h2>
         <div id="modes">
-            <button>Easy</button>
-            <button>Medium</button>
-            <button>Hard</button>
+            <a href="levels/easy.html"><button class="animated zoomIn delay-2s" >Easy</button></a>
+            <a href="levels/mid.html"><button class="animated zoomIn delay-3s">Medium</button></a>
+            <a href="levels/hard.html"><button class="animated zoomIn delay-4s">Hard</button></a>
         </div>
 
     </div>

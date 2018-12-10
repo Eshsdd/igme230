@@ -246,6 +246,7 @@ main {
     width: 30px;
     height: 30px;
     background-color: dimgray;
+    color: dimgray;
     border: none;
     border-radius: 9px;
 }

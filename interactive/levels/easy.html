@@ -49,12 +49,15 @@
 
         let lit = false;
 
+        // claw goes away when match is picked up
         $("#match").mousedown(function () {
             $('#claw').addClass('animated fadeOutDown');
         });
 
+        //if the fuse is lit and the button is pressed move on.
         $("#bigRed").click(function () {
             if (lit == true) {
+                window.location.replace("https://media3.giphy.com/media/ceHKRKMR6Ojao/giphy.gif?cid=3640f6095c0da7b75957475736afd75d")
             }
         })
 

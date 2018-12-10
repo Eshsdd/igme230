@@ -115,12 +115,19 @@
             if (rotateVal == 8) {
                 $('#ticker').css('transform', 'rotate(0deg)');
                 rotateVal = 0;
-            }
+            };
 
-            //if the fues is lit and it's rotated to a specific value then boom
+            //if the fuse is lit and it's rotated to a specific value then boom
             if (lit == true && rotateVal == 6) {
+                window.location.replace("https://media.giphy.com/media/z9iE1SPAptyLK/giphy.gif");
             }
-        })
+        });
+
+        $("#match").mouseup(function () {
+            //if the fuse is lit and it's rotated to a specific value then boom
+            if (lit == true && rotateVal == 6) {
+                window.location.replace("https://media.giphy.com/media/z9iE1SPAptyLK/giphy.gif");
+            }});
     </script>
 </body>
 

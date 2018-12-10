@@ -1,11 +1,12 @@
 /* Personal Code */
 
+/* Setting up Fonts */
 @font-face{
 font-family:photoshoot;
 src: url(assets/photoshoot.ttf);
 }
 
-
+/* Setting the body up colors, and alignments */
 body{
     background-color: #00A8E8;
 
@@ -21,11 +22,31 @@ img{
     max-height: 75vh;
 }
 
+/* Documentation Link mad to look like a bouncing blueberry*/
+#blueBerry{
+    position: absolute;
+    margin: 20px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #007EA7;
+
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    
+    font-family:photoshoot;
+    font-size: 20px;
+    color: #1E3888;
+}
 
 /* Name Grid Sections */
 #centered { grid-area: centered; }
 #info { grid-area: info; }
 
+/* Centering everything */
 #wrapper{
     height: 100vh;
     width: inherit;
@@ -43,7 +64,7 @@ img{
 #centered{
     display: grid;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 #info{
@@ -52,7 +73,7 @@ img{
     align-items: center;
 }
 
-
+/* Have all the buttons spaced well and look nice */
 #modes{
     padding: 15px;
     width: 100%;
@@ -76,6 +97,7 @@ button{
     color: #1E3888;
 }
 
+/* Header design */
 #info h2{
     font-family:photoshoot;
     font-size: 40px;

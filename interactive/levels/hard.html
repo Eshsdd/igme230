@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="levels.css">
-    <title>Middle Mode</title>
+    <title>Hard Mode</title>
 
     <style>
         /* Specific to this webpage*/
-    /* an open flame in a box is not the best idea*/
+        /* an open flame in a box is not the best idea*/
         #flame {
             display: none;
         }
-    /*moving the matchstick*/
+
+        /*moving the matchstick*/
         #matchStick {
             left: 20px;
             top: 535px;
@@ -47,9 +48,26 @@
             <img id="outside" src="/interactive/assets/Matches/MatchBox.png" alt="outside MatchBox">
             <img id="safeLid" src="/interactive/assets/Matches/SafeTop.png" alt="Lid of the safe">
             <img id="safe" src="/interactive/assets/Matches/Safe.png" alt="A large Safe">
+            <div id="screwButtons">
+                <button class="screws" id="screw1"></button>
+                <button class="screws" id="screw2"></button>
+                <button class="screws" id="screw3"></button>
+                <button class="screws" id="screw4"></button>
+            </div>
         </aside>
         <main>
             <div id="bombSquad">
+                <div id="switchButtons">
+                    <button class="colorButtons">
+                        <div id="greenBox"></div>
+                    </button>
+                    <button class="colorButtons">
+                        <div id="redBox"></div>
+                    </button>
+                    <button class="colorButtons">
+                        <div id="blueBox"></div>
+                    </button>
+                </div>
                 <img id="theBomb" src="/interactive/assets/Bombs/largeBomb.png" alt="A rounded Bomb.">
                 <div id="fuseSpot"><img id="fuse" src="/interactive/assets/Bombs/fuse.png" alt="A small lit fuse" class="animated infinite tada">
                 </div>
@@ -61,9 +79,10 @@
         // webpage specific code.
 
         let lit = false;
-        let rotateVal = 0;
+        let screwVal = 0;
+        let code = false;
 
-//when match is picked up it lights itself and removes the box
+        //when match is picked up it lights itself and removes the box
         $("#match").mousedown(function () {
             $('#outside').addClass('animated fadeOutDown');
             $('#inside').addClass('animated fadeOutDown');
@@ -72,16 +91,64 @@
 
         //clicking on the inside box will open it up allowing you to pick up the match
         $('#matchClick').click(function () {
-            $('#inside').css('top', '160px');
-            $('#outside').css('top', '20px');
-            $('#matchStick').css('top', '440px');
+            $('#inside').css('top', '180px');
+            $('#outside').css('top', '100px');
+            $('#matchStick').css('top', '400px');
             $('#matchClick').css('display', 'none');
-        })
+        });
 
-        $("#ticker").click(function () {
-            if (lit == true && rotateVal == 6) {
+        //clicking on 4 screws will then open the safe and pull out the safe from behind.
+        $(".screws").click(function () {
+            $(this).addClass('animated rollOut');
+            screwVal++; //screw value keeps growing until 4
+            if (screwVal == 4) {
+                $(".screws").css('display', 'none');
+                $("#safeLid").addClass('animated hinge');
+                $("#safe").addClass('animated fadeOutDown delay-1s');
+
             }
-        })
+
+        });
+
+        //Colored Screens
+        $(".colorButtons").click(function () {
+
+            //is background white? okay, turn it green
+            if ($(this).children().css('background-color') == 'rgb(255, 255, 255)') {
+                $(this).children().css('background-color', 'rgb(80, 255, 80)');
+
+            //is background green? okay, turn it red
+            } else if ($(this).children().css('background-color') == 'rgb(80, 255, 80)') {
+                $(this).children().css('background-color', 'rgb(255, 80, 80)');
+
+            //is background red? okay, turn it blue
+            } else if ($(this).children().css('background-color') == 'rgb(255, 80, 80)') {
+                $(this).children().css('background-color', 'rgb(80, 80, 255)');
+                
+            //is background blue? okay, turn it white
+            } else if ($(this).children().css('background-color') == 'rgb(80, 80, 255)') {
+                $(this).children().css('background-color', 'rgb(255, 255, 255)');
+            }
+            
+            //if the three codes match the matchbox design then ya good!
+            if (($("#greenBox").css('background-color') == 'rgb(80, 255, 80)')
+            && ($("#redBox").css('background-color') == 'rgb(255, 80, 80)')
+            && ($("#blueBox").css('background-color') =='rgb(80, 80, 255)')) {
+                code = true;
+                if (lit == true && code == true) {
+                window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            }
+            } else {
+                code = false;
+            }
+
+        });
+
+        $("#match").mouseup(function () {
+            if (lit == true && code == true) {
+                window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+            }
+        });
     </script>
 </body>
 
